@@ -7,11 +7,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>jenkinsSample Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.3.1</version>
-  </plugin>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -21,6 +16,13 @@
     </dependency>
   </dependencies>
   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+    </plugins>
     <finalName>jenkinsSample</finalName>
   </build>
 </project>
